@@ -46,7 +46,7 @@ export default function MainNav() {
           Menu
         </div>
       </div>
-      {/* Mobile Menu */}
+      
       {open && (
         <MobileNavDropdown onClick={toggleMenu} />
       )}

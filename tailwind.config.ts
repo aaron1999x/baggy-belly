@@ -20,6 +20,9 @@ const config: Config = {
           "2xl": "1400px",
         },
       },
+      fontFamily:{
+        luckGuy:["var(--font-luckGuy)"]
+      }
     },
   },
   plugins: [],

@@ -20,3 +20,7 @@ export type MainNavItem = NavItem
 export type MarketingConfig = {
   mainNav: MainNavItem[]
 }
+
+export type MobileNavDropdown ={
+  onClick: () => void;
+}

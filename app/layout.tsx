@@ -1,10 +1,16 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Luckiest_Guy } from 'next/font/google'
 import './globals.css'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
 import { siteConfig } from '@/config/site'
 
 const inter = Inter({ subsets: ['latin'] })
+const luckGuy = Luckiest_Guy({ 
+  subsets: ['latin'],
+  weight:'400',
+  variable:'--font-luckGuy'
+})
 
 export const metadata: Metadata = {
   title: {
@@ -33,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} min-h-screen`}>
+      <body className={`${inter.className} ${luckGuy.variable} min-h-screen`}>
         {children}
         <TailwindIndicator/>
       </body>

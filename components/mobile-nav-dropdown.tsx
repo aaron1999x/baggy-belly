@@ -101,11 +101,15 @@ export default function MobileNavDropdown({onClick}:MobileNavDropdown) {
             </div>
 
           ))}
-          <div className='flex gap-3 items-center mt-12'>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 100 }}
+            transition={{ ease: "easeOut", duration: 1, delay:0.8 }}
+            className='flex gap-3 items-center mt-12'>
             <Instagram />
             <Facebook />
             <TikTokSvg />
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </motion.div>

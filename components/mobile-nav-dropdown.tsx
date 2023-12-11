@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Facebook, Instagram } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
-import TikTokSvg from './svg-components';
+import { TikTokSvg } from './svg-components';
 
 
 export default function MobileNavDropdown({onClick}:MobileNavDropdown) {
@@ -76,7 +76,7 @@ export default function MobileNavDropdown({onClick}:MobileNavDropdown) {
             <span className='font-bold'>Baggy Belly</span>
           </Link>
           <div className='md:hidden text-white'
-            onClick={onClick}
+            onClick={()=>onClick()}
           >
             Close
           </div>
